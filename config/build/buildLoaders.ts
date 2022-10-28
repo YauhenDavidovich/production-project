@@ -6,6 +6,19 @@ export function buildLoaders(): webpack.RuleSetRule[] {
         use: ['@svgr/webpack'],
     }
 
+    const babelLoader = {
+
+        test: /\.(js|jsx|tsx)$/,
+        exclude: /node_modules/,
+        use: {
+            loader: "babel-loader",
+            options: {
+                presets: ['@babel/preset-env']
+            }
+        }
+    }
+
+
     const fileLoader = {
         test: /\.(png|jpe?g|gif|woff2|woff)$/i,
         loader: 'file-loader',
@@ -26,14 +39,14 @@ export function buildLoaders(): webpack.RuleSetRule[] {
         ],
     }
 
-    const
-        typeScriptLoader = {
-            test: /\.tsx?$/,
-            use: 'ts-loader',
-            exclude: /node_modules/,
-        }
+    const typeScriptLoader = {
+        test: /\.tsx?$/,
+        use: 'ts-loader',
+        exclude: /node_modules/,
+    }
 
     return [
+        babelLoader,
         typeScriptLoader,
         cssLoader,
         fileLoader,
