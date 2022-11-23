@@ -4,5 +4,8 @@
   "lang": "English",
   "Toggle": "Toggle",
   "Loading": "Loading",
-  "Page not found": "Page not found"
+  "Page not found": "Page not found",
+  "something wrong": "Something wrong",
+  "reload page": "Reload page",
+  "throw error": "throw error"
 }
