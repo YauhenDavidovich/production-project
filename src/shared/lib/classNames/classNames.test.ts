@@ -1,35 +1,50 @@
 import { classNames } from 'shared/lib/classNames/classNames';
 
+// import { classNames } from './classNames';
+
 describe('classNames', () => {
     test('with only first param', () => {
-        expect(classNames('someClass')).toBe('someClass');
+        expect(classNames('someClass'))
+            .toBe('someClass');
     });
+
     test('with additional class', () => {
-        const expected = 'someClass additional';
-        expect(classNames('someClass', {}, ['additional'])).toBe(expected);
+        const expected = 'someClass someClass1 someClass2 someClass3';
+        expect(classNames(
+            'someClass',
+            {},
+            ['someClass1', 'someClass2', 'someClass3'],
+        ))
+            .toBe(expected);
     });
+
+    test('with additional class', () => {
+        const expected = 'someClass someClass1 someClass2 someClass3';
+        expect(classNames(
+            'someClass',
+            {},
+            ['someClass1', 'someClass2', 'someClass3'],
+        ))
+            .toBe(expected);
+    });
+
     test('with mods', () => {
-        const expected = 'someClass additional scrollable active';
+        const expected = 'someClass someClass1 focused hovered';
         expect(classNames(
             'someClass',
-            { scrollable: true, active: true },
-            ['additional'],
-        )).toBe(expected);
+            { focused: true, hovered: true },
+            ['someClass1'],
+        ))
+            .toBe(expected);
     });
-    test('with mods false', () => {
-        const expected = 'someClass additional scrollable';
+
+    test('with mods undefined and false', () => {
+        const expected = 'someClass someClass1 focused';
         expect(classNames(
             'someClass',
-            { scrollable: true, active: false },
-            ['additional'],
-        )).toBe(expected);
-    });
-    test('with mods undefined', () => {
-        const expected = 'someClass additional scrollable';
-        expect(classNames(
-            'someClass',
-            { scrollable: true, active: undefined },
-            ['additional'],
-        )).toBe(expected);
+            { focused: true, hovered: undefined, outlined: false },
+            ['someClass1'],
+        ))
+            .toBe(expected);
     });
 });

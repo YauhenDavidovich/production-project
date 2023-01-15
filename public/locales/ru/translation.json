@@ -1,11 +1,10 @@
 {
- "About page": "О сайте",
- "Home page": "Главная",
- "lang": "Русский",
- "Toggle": "Переключить",
- "Loading": "Загрузка",
- "Page not found": "Страница не найдена",
-  "something wrong": "Непредвиденная ошибка",
- "reload page": "Обновить страницу",
- "throw error": "выбросить ошибку"
+  "Language": "Rus",
+  "Home": "Главная",
+  "About": "О нас",
+  "Loading": "Загружается...",
+  "Page not found": "Страница не найдена",
+  "Something went wrong": "Что-то пошло не так",
+  "Reload page": "Перезагрузить страницу",
+  "Throw error to page": "Имитация ошибки"
 }

@@ -1,11 +1,10 @@
 {
-  "About page": "About page",
-  "Home page": "Home page",
-  "lang": "English",
-  "Toggle": "Toggle",
-  "Loading": "Loading",
+  "Language": "Eng",
+  "Home": "Home",
+  "About": "About",
+  "Loading": "Loading...",
   "Page not found": "Page not found",
-  "something wrong": "Something wrong",
-  "reload page": "Reload page",
-  "throw error": "throw error"
+  "Something went wrong": "Something went wrong",
+  "Reload page": "Reload page",
+  "Throw error to page": "Throw error to page"
 }

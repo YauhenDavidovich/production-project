@@ -3,23 +3,24 @@ import { useTranslation } from 'react-i18next';
 import cls from './PageError.module.scss';
 
 interface PageErrorProps {
-    className?: string
+  className?: string;
 }
 
 export const PageError = ({ className }: PageErrorProps) => {
     const { t } = useTranslation();
 
     const reloadPage = () => {
-        // eslint-disable-next-line no-restricted-globals
-        location.reload();
+        window.location.reload();
     };
 
     return (
-
         <div className={classNames(cls.PageError, {}, [className])}>
-            <p>{t('something wrong')}</p>
-            <button onClick={reloadPage} type="button">
-                {t('reload page')}
+            <p>{t('Something went wrong')}</p>
+            <button
+                onClick={reloadPage}
+                type="button"
+            >
+                {t('Reload page')}
             </button>
         </div>
     );
