@@ -1,15 +1,15 @@
 import React from 'react';
-import {ComponentMeta, ComponentStory} from '@storybook/react';
+import { ComponentMeta, ComponentStory } from '@storybook/react';
 
-import {ThemeDecorator} from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
-import {Theme} from 'app/providers/ThemeProvider';
-import {Button, ButtonTheme} from './Button';
+import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
+import { Theme } from 'app/providers/ThemeProvider';
+import { Button, ButtonTheme } from './Button';
 
 export default {
     title: 'shared/Button',
     component: Button,
     argTypes: {
-        backgroundColor: {control: 'color'},
+        backgroundColor: { control: 'color' },
     },
     decorators: [
         ThemeDecorator(Theme.LIGHT),

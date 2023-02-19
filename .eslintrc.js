@@ -8,13 +8,15 @@ module.exports = {
         'plugin:react/recommended',
         'airbnb',
         'plugin:i18next/recommended',
+        'plugin:react-hooks/recommended',
     ],
     parser: '@typescript-eslint/parser',
     overrides: [
         {
-            files: ['**/src/**/*.test.{ts,tsx}'],
+            files: ['**/src/**/*.{test,stories}.{ts,tsx}'],
             rules: {
                 'i18next/no-literal-string': 'off',
+                'max-len': 'off',
             },
         },
     ],
@@ -29,6 +31,7 @@ module.exports = {
         'react',
         'i18next',
         '@typescript-eslint',
+        'react-hooks',
     ],
     rules: {
         indent: [2, 4],
@@ -47,7 +50,21 @@ module.exports = {
         'react/function-component-definition': 'off',
         'no-shadow': 'off',
         'import/extensions': 'off',
-        'import/no-extraneous-dependencies': 'warn',
+        'import/no-extraneous-dependencies': [
+            'warn',
+            {
+                devDependencies: [
+                    '**/*.stories.*',
+                    '**/.storybook/**/*.*',
+                    'test.{ts,tsx}', // repos with a single test file
+                    'test-*.{ts,tsx}', // repos with multiple top-level test files
+                    '**/*{.,_}{test,spec}.{ts,tsx}', // tests where the extension or filename suffix denotes that it is a test
+                    '**/jest.config.ts', // jest config
+                    '**/jest.setup.ts', // jest setup
+                ],
+                peerDependencies: true,
+            },
+        ],
         'no-underscore-dangle': 'off',
         'i18next/no-literal-string': [
             'error',
@@ -60,11 +77,16 @@ module.exports = {
             'error',
             {
                 ignoreComments: true,
-                code: 100,
+                code: 120,
                 ignorePattern: 'd="([\\s\\S]*?)"',
             },
         ],
         'no-restricted-globals': 'warn',
+        'jsx-a11y/no-static-element-interactions': 'off',
+        'jsx-a11y/click-events-have-key-events': 'off',
+        'react-hooks/rules-of-hooks': 'error',
+        'react-hooks/exhaustive-deps': 'warn',
+        'no-param-reassign': 'off',
     },
     globals: {
         __IS_DEV__: true,
