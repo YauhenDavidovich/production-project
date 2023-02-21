@@ -7,7 +7,7 @@ import { LangSwitcher } from 'shared/ui/LangSwitcher/LangSwitcher';
 import cls from './Sidebar.module.scss';
 
 interface SidebarProps {
-  className?: string;
+    className?: string;
 }
 
 export const Sidebar = ({ className }: SidebarProps) => {
@@ -28,11 +28,11 @@ export const Sidebar = ({ className }: SidebarProps) => {
         >
             <div className={cls.menu}>
                 <Button
-                    theme={ButtonTheme.CLEAR}
+                    theme={ButtonTheme.BACKGROUND_INVERTED}
                     data-testid="sidebar-toggle"
                     onClick={onToggle}
                 >
-                    <SideBarIcon />
+                    {collapsed ? '>' : '<'}
                 </Button>
             </div>
             <div className={cls.switchers}>
