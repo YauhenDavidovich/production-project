@@ -20,9 +20,9 @@ const Template: ComponentStory<typeof PageError> = (args) => (
     <PageError {...args} />
 );
 
-export const Light = Template.bind({});
-Light.args = {};
+export const PageErrorLight = Template.bind({});
+PageErrorLight.args = {};
 
-export const Dark = Template.bind({});
-Dark.args = {};
-Dark.decorators = [ThemeDecorator(Theme.DARK)];
+export const PageErrorDark = Template.bind({});
+PageErrorDark.args = {};
+PageErrorDark.decorators = [ThemeDecorator(Theme.DARK)];

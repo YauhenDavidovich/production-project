@@ -25,10 +25,10 @@ const Template: ComponentStory<typeof ThemeSwitcher> = (args) => (
     </div>
 );
 
-export const Normal = Template.bind({});
-Normal.args = {};
+export const ThemeSwitcherNormal = Template.bind({});
+ThemeSwitcherNormal.args = {};
 
-export const Dark = Template.bind({});
-Dark.args = {};
+export const ThemeSwitcherDark = Template.bind({});
+ThemeSwitcherDark.args = {};
 
-Dark.decorators = [ThemeDecorator(Theme.DARK)];
+ThemeSwitcherDark.decorators = [ThemeDecorator(Theme.DARK)];

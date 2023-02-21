@@ -20,10 +20,9 @@ const Template: ComponentStory<typeof MainPage> = (args) => (
     <MainPage {...args} />
 );
 
-export const Normal = Template.bind({});
-Normal.args = {};
+export const MainPageLight = Template.bind({});
+MainPageLight.args = {};
 
-export const Dark = Template.bind({});
-Dark.args = {};
-
-Dark.decorators = [ThemeDecorator(Theme.DARK)];
+export const MainPageDark = Template.bind({});
+MainPageDark.args = {};
+MainPageDark.decorators = [ThemeDecorator(Theme.DARK)];

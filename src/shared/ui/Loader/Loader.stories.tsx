@@ -25,10 +25,10 @@ const Template: ComponentStory<typeof Loader> = (args) => (
     </div>
 );
 
-export const Normal = Template.bind({});
-Normal.args = {};
+export const LoaderNormal = Template.bind({});
+LoaderNormal.args = {};
 
-export const Dark = Template.bind({});
-Dark.args = {};
+export const LoaderDark = Template.bind({});
+LoaderDark.args = {};
 
-Dark.decorators = [ThemeDecorator(Theme.DARK)];
+LoaderDark.decorators = [ThemeDecorator(Theme.DARK)];

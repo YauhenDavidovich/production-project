@@ -20,9 +20,9 @@ const Template: ComponentStory<typeof Navbar> = (args) => (
     <Navbar {...args} />
 );
 
-export const Light = Template.bind({});
-Light.args = {};
+export const NavbarLight = Template.bind({});
+NavbarLight.args = {};
 
-export const Dark = Template.bind({});
-Dark.args = {};
-Dark.decorators = [ThemeDecorator(Theme.DARK)];
+export const NavbarDark = Template.bind({});
+NavbarDark.args = {};
+NavbarDark.decorators = [ThemeDecorator(Theme.DARK)];
