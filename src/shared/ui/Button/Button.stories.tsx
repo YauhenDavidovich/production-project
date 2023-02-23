@@ -42,6 +42,12 @@ ButtonClearLight.args = {
     theme: ButtonTheme.CLEAR,
 };
 
+export const ButtonClearInverted = Template.bind({});
+ButtonClearInverted.args = {
+    children: 'ClearInverted Button',
+    theme: ButtonTheme.CLEAR_INVERTED,
+};
+
 export const ButtonClearDark = Template.bind({});
 ButtonClearDark.args = {
     children: 'ClearDark Button',

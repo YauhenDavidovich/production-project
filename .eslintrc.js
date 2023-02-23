@@ -85,8 +85,8 @@ module.exports = {
         'no-restricted-globals': 'warn',
         'jsx-a11y/no-static-element-interactions': 'off',
         'jsx-a11y/click-events-have-key-events': 'off',
-        'react-hooks/rules-of-hooks': 'error',
-        'react-hooks/exhaustive-deps': 'warn',
+        'react-hooks/rules-of-hooks': 'error', // Check rules of hooks
+        'react-hooks/exhaustive-deps': 'error', // Check effect dependencies
         'no-param-reassign': 'off',
     },
     globals: {
