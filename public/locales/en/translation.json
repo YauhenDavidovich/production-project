@@ -7,5 +7,7 @@
   "Something went wrong": "Something went wrong",
   "Reload page": "Reload page",
   "Throw error to page": "Throw error to page",
-  "Short language": "EN"
+  "Short language": "EN",
+  "decrement": "Decrement",
+  "increment": "Increment"
 }
