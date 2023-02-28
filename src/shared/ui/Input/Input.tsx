@@ -31,6 +31,9 @@ export const Input = memo((props: InputProps) => {
                 onChange={onChangeHandler}
                 {...otherProps}
             />
+            <label htmlFor={otherProps.id} className={cls.InputLabel}>
+                {placeholder}
+            </label>
         </div>
     );
 });
