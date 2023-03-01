@@ -14,7 +14,7 @@ export const LoginModal = (props: LoginModalProps) => {
     const { className, isOpen, onClose } = props;
     const { t } = useTranslation();
     return (
-        <Modal isOpen={isOpen} onClose={onClose} className={classNames(cls.LoginModal, {}, [className])}>
+        <Modal isOpen={isOpen} onClose={onClose} className={classNames(cls.LoginModal, {}, [className])} lazy>
             <LoginForm />
         </Modal>
     );

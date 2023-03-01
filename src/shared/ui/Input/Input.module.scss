@@ -1,51 +1,50 @@
 .InputWrapper {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-}
-
-.Input {
-  width: 100%;
-  border: 1px solid #d9d9d9;
-  border-radius: 4px;
-  padding: 6px 8px;
-  font: var(--font-line-l);
-  color: var(--primary-color);
-  background-color: var(--bg-color);
-  transition: border-color 0.3s ease;
-
-  &:focus {
-    outline: none;
-    border-color: var(--inverted-primary-color);
-    box-shadow: 0 0 0 2px var(--shadow-color);
-
-    & ~ .InputLabel {
-      font: var(--font-m);
-      transform: translateY(-32px);
-      background-color: var(--bg-color);
-      color: var(--primary-color);
-    }
-  }
-
-  &:not(:focus) {
-    & ~ .InputLabel {
-      font: var(--font-m);
-      transform: translateY(-6px);
-      color: #bfbfbf;
-    }
-  }
-
-  &::placeholder {
-    color: transparent;
-  }
+    position: relative;
+    display: inline-flex;
+    align-items: center;
 }
 
 .InputLabel {
-  position: absolute;
-  top: 50%;
-  left: 8px;
-  transform: translateY(-6px);
-  font: var(--font-m);
-  pointer-events: none;
-  transition: all 0.3s ease;
+    position: absolute;
+    top: 50%;
+    left: 8px;
+    transform: translateY(-6px);
+    font: var(--font-m);
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.Input {
+    width: 100%;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    padding: 6px 8px;
+    font: var(--font-line-l);
+    color: var(--primary-color);
+    background-color: var(--bg-color);
+    transition: border-color 0.3s ease;
+
+    &:focus {
+        outline: none;
+        border-color: var(--inverted-primary-color);
+        box-shadow: 0 0 0 2px var(--shadow-color);
+
+        & ~ .InputLabel {
+            font: var(--font-m);
+            transform: translateY(-32px);
+            background-color: var(--bg-color);
+            color: var(--primary-color);
+        }
+    }
+
+    &::placeholder {
+        color: transparent;
+    }
+}
+
+.InputLabelFocused {
+    font: var(--font-m);
+    transform: translateY(-32px);
+    background-color: var(--bg-color);
+    color: var(--primary-color);
 }

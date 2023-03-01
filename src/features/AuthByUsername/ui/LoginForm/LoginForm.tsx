@@ -11,16 +11,34 @@ interface LoginFormProps {
 
 export const LoginForm = ({ className }: LoginFormProps) => {
     const { t } = useTranslation();
-    const [value, setValue] = useState('');
+    const [loginValue, setLoginValue] = useState('');
+    const [passValue, setPassValue] = useState('');
 
-    const onChange = (value: string) => {
-        setValue(value);
+    const onChangeLogin = (value: string) => {
+        setLoginValue(value);
+    };
+
+    const onChangePass = (value: string) => {
+        setPassValue(value);
     };
 
     return (
         <div className={classNames(cls.LoginForm, {}, [className])}>
-            <Input type="text" className={cls.input} onChange={onChange} placeholder="DDDD" />
-            <Input type="text" className={cls.input} />
+            <Input
+                type="text"
+                className={cls.input}
+                onChange={onChangeLogin}
+                placeholder={t('Username')}
+                autofocus
+                value={loginValue}
+            />
+            <Input
+                type="text"
+                className={cls.input}
+                onChange={onChangePass}
+                placeholder={t('Password')}
+                value={passValue}
+            />
             <Button className={cls.loginBtn}>{t('Login')}</Button>
         </div>
     );
