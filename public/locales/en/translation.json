@@ -12,5 +12,8 @@
   "increment": "Increment",
   "Login": "Login",
   "Password": "Password",
-  "Username": "Username"
+  "Username": "Username",
+  "Wrong login input": "You entered the wrong username or password!",
+  "Sign in": "Sign in",
+  "Sign out": "Sign out"
 }
