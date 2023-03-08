@@ -39,21 +39,6 @@
     flex-direction: column;
 }
 
-.item {
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-}
-
-.icon {
-    fill: var(--inverted-primary-color);
-}
-
-.link {
-    opacity: 1;
-    margin-top: 10px;
-}
-
 .collapsed {
     width: var(--sidebar-width-collapsed);
 

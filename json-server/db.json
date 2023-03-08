@@ -25,5 +25,14 @@
       "password": "123"
     }
   ],
-  "profile": { "name": "typicode" }
+  "profile": {
+    "first": "Yauhen",
+    "last": "Davidovich",
+    "age": 35,
+    "currency": "EUR",
+    "country": "Belarus",
+    "city": "Minsk",
+    "username": "admin",
+    "avatar": "https://www.pngfind.com/pngs/m/470-4703547_icon-user-icon-hd-png-download.png"
+  }
 }
