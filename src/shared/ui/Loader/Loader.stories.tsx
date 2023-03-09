@@ -16,12 +16,12 @@ export default {
     ],
 } as ComponentMeta<typeof Loader>;
 
-const Template: ComponentStory<typeof Loader> = (args) => (
+const Template: ComponentStory<typeof Loader> = () => (
     <div style={{
         display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh',
     }}
     >
-        <Loader {...args} />
+        <Loader />
     </div>
 );
 
