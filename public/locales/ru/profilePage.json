@@ -3,5 +3,17 @@
   "Profile": "Профиль",
   "Edit": "Редактировать",
   "Name": "Имя",
-  "Last name": "Фамилия"
+  "Last name": "Фамилия",
+  "Some error occurred": "Произошла ошибка",
+  "Try to reload page": "Попробуйте перезагрузить страницу",
+  "Cancel": "Отменить",
+  "Save": "Сохранить",
+  "Age": "Возраст",
+  "City": "Город",
+  "Avatar": "Аватар",
+  "Error during data update": "Ошибка сервера во время обновления данных",
+  "Incorrect age": "Некоректный возраст",
+  "Incorrect country": "Страна не указана",
+  "First and last names are required": "Имя и фамилия обязательны",
+  "No data is specified": "Данные не указаны"
 }

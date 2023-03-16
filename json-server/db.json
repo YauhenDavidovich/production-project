@@ -28,10 +28,10 @@
   "profile": {
     "first": "Yauhen",
     "last": "Davidovich",
-    "age": 35,
-    "currency": "EUR",
-    "country": "Belarus",
-    "city": "Minsk",
+    "age": 345,
+    "currency": "PLN",
+    "country": "Poland",
+    "city": "Krakow",
     "username": "admin",
     "avatar": "https://www.pngfind.com/pngs/m/470-4703547_icon-user-icon-hd-png-download.png"
   }

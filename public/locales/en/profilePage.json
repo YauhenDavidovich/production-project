@@ -3,5 +3,17 @@
   "Profile": "Profile",
   "Edit": "Edit",
   "Name": "Name",
-  "Last name": "Last name"
+  "Last name": "Last name",
+  "Some error occurred": "Some error occurred",
+  "Try to reload page": "Try to reload page",
+  "Cancel": "Cancel",
+  "Save": "Save",
+  "Age": "Age",
+  "City": "City",
+  "Avatar": "Avatar",
+  "Error during data update": "Error during data update",
+  "Incorrect age": "Incorrect age",
+  "Incorrect country": "Incorrect country",
+  "First and last names are required": "First and last names are required",
+  "No data is specified": "No data is specified"
 }

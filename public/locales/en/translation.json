@@ -15,5 +15,7 @@
   "Username": "Username",
   "Wrong login input": "You entered the wrong username or password!",
   "Sign in": "Sign in",
-  "Sign out": "Sign out"
+  "Sign out": "Sign out",
+  "Choose currency": "Choose currency",
+  "Choose country": "Choose country"
 }

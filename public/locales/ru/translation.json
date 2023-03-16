@@ -15,6 +15,7 @@
   "Username": "Имя пользователя",
   "Wrong login input": "Вы ввели неправильный логин или пароль!",
   "Sign in": "Войти",
-  "Sign out": "Выйти"
-
+  "Sign out": "Выйти",
+  "Choose currency": "Выберите валюту",
+  "Choose country": "Выберите страну"
 }

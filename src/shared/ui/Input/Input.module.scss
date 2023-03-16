@@ -43,6 +43,14 @@
     }
 }
 
+.InputWrapper.readonly {
+    opacity: 0.6;
+
+    .Input {
+        cursor: not-allowed;
+    }
+}
+
 .InputLabelFocused {
     font: var(--font-m);
     transform: translateY(-32px);

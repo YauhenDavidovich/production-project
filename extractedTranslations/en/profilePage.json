@@ -1,7 +1,19 @@
 {
-  "Profile page": "",
-  "Profile": "Profile",
+  "Age": "Age",
+  "Avatar": "Avatar",
+  "Cancel": "Cancel",
+  "City": "City",
   "Edit": "Edit",
+  "Error during data update": "Error during data update",
+  "First and last names are required": "First and last names are required",
+  "Incorrect age": "Incorrect age",
+  "Incorrect country": "Incorrect country",
+  "Last name": "Last name",
   "Name": "Name",
-  "Last name": "Last name"
+  "No data is specified": "No data is specified",
+  "Profile": "Profile",
+  "Profile page": "",
+  "Save": "Save",
+  "Some error occurred": "Some error occurred",
+  "Try to reload page": "Try to reload page"
 }
