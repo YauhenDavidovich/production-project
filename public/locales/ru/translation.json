@@ -2,6 +2,8 @@
   "Language": "Rus",
   "Home": "Главная",
   "About": "О нас",
+  "Profile": "Профиль",
+  "Articles": "Статьи",
   "Loading": "Загружается...",
   "Page not found": "Страница не найдена",
   "Something went wrong": "Что-то пошло не так",
@@ -17,5 +19,6 @@
   "Sign in": "Войти",
   "Sign out": "Выйти",
   "Choose currency": "Выберите валюту",
-  "Choose country": "Выберите страну"
+  "Choose country": "Выберите страну",
+  "Copy": "Копировать"
 }

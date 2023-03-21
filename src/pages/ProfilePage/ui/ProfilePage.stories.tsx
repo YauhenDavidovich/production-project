@@ -24,9 +24,9 @@ const Template: ComponentStory<typeof ProfilePage> = (args) => (
     <ProfilePage {...args} />
 );
 
-export const ProfilePageLight = Template.bind({});
-ProfilePageLight.args = {};
-ProfilePageLight.decorators = [StoreDecorator({
+export const ProfilePageLightTheme = Template.bind({});
+ProfilePageLightTheme.args = {};
+ProfilePageLightTheme.decorators = [StoreDecorator({
     profile: {
         form: {
             username: 'Test',
@@ -41,9 +41,9 @@ ProfilePageLight.decorators = [StoreDecorator({
     },
 })];
 
-export const ProfilePageDark = Template.bind({});
-ProfilePageDark.args = {};
-ProfilePageDark.decorators = [ThemeDecorator(Theme.DARK), StoreDecorator({
+export const ProfilePageDarkTheme = Template.bind({});
+ProfilePageDarkTheme.args = {};
+ProfilePageDarkTheme.decorators = [ThemeDecorator(Theme.DARK), StoreDecorator({
     profile: {
         form: {
             username: 'Test',

@@ -17,12 +17,12 @@ const Template: ComponentStory<typeof ProfileCard> = (args) => (
     <ProfileCard {...args} />
 );
 
-export const ProfileCardPrimary = Template.bind({});
-ProfileCardPrimary.args = {
+export const ProfileCardNormal = Template.bind({});
+ProfileCardNormal.args = {
     data: {
         username: 'Test',
         country: Country.Belarus,
-        age: 18,
+        age: 35,
         first: 'Test name',
         last: 'Test surname',
         currency: Currency.PLN,
@@ -36,7 +36,7 @@ ProfileCardWithError.args = {
     error: 'error',
 };
 
-export const ProfileCarIsLoading = Template.bind({});
-ProfileCarIsLoading.args = {
+export const ProfileCardIsLoading = Template.bind({});
+ProfileCardIsLoading.args = {
     isLoading: true,
 };

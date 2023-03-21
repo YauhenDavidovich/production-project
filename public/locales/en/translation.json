@@ -2,6 +2,8 @@
   "Language": "Eng",
   "Home": "Home",
   "About": "About",
+  "Profile": "Profile",
+  "Articles": "Articles",
   "Loading": "Loading...",
   "Page not found": "Page not found",
   "Something went wrong": "Something went wrong",
@@ -17,5 +19,6 @@
   "Sign in": "Sign in",
   "Sign out": "Sign out",
   "Choose currency": "Choose currency",
-  "Choose country": "Choose country"
+  "Choose country": "Choose country",
+  "Copy": "Copy"
 }
