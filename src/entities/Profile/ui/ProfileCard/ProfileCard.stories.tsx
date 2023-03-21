@@ -3,6 +3,8 @@ import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { Country } from 'entities/Country/model/types/country';
 import { Currency } from 'entities/Currency';
 import avatar from 'shared/assets/tests/avatar.jpg';
+import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
+import { Theme } from 'app/providers/ThemeProvider';
 import { ProfileCard } from './ProfileCard';
 
 export default {
@@ -16,13 +18,26 @@ export default {
 const Template: ComponentStory<typeof ProfileCard> = (args) => (
     <ProfileCard {...args} />
 );
-
-export const ProfileCardNormal = Template.bind({});
-ProfileCardNormal.args = {
+export const ProfileCardLightTheme = Template.bind({});
+ProfileCardLightTheme.args = {
     data: {
         username: 'Test',
         country: Country.Belarus,
-        age: 35,
+        age: 36,
+        first: 'Test name',
+        last: 'Test surname',
+        currency: Currency.PLN,
+        city: 'Krakow',
+        avatar,
+    },
+};
+
+export const ProfileCardDarkTheme = Template.bind({});
+ProfileCardDarkTheme.args = {
+    data: {
+        username: 'Test',
+        country: Country.Belarus,
+        age: 36,
         first: 'Test name',
         last: 'Test surname',
         currency: Currency.PLN,
@@ -30,6 +45,8 @@ ProfileCardNormal.args = {
         avatar,
     },
 };
+
+ProfileCardDarkTheme.decorators = [ThemeDecorator(Theme.DARK)];
 
 export const ProfileCardWithError = Template.bind({});
 ProfileCardWithError.args = {
