@@ -12,6 +12,7 @@
   "Choose country": "Choose country",
   "Choose currency": "Choose currency",
   "City": "City",
+  "Comments": "Comments",
   "Copy": "Copy",
   "Edit": "Edit",
   "Error during data update": "Error during data update",
@@ -39,6 +40,9 @@
   "Sing": "Sing",
   "Some error occurred": "Some error occurred",
   "Something went wrong": "Something went wrong",
+  "There are no comments": {
+    "json": "json"
+  },
   "Throw error to page": "Throw error to page",
   "Toggle": "Toggle",
   "Try to reload page": "Try to reload page",
