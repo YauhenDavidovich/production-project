@@ -17,6 +17,8 @@ import { useSelector } from 'react-redux';
 import { Currency } from 'entities/Currency';
 import { Country } from 'entities/Country/model/types/country';
 import { TextTheme, Text } from 'shared/ui/Text/Text';
+import { useInitialEffects } from 'shared/lib/hooks/useInitialEffect/useInitialEffect';
+import { useParams } from 'react-router-dom';
 import { ProfilePageHeader } from './ProfilePageHeader/ProfilePageHeader';
 
 const reducers: ReducersList = {
@@ -27,6 +29,7 @@ interface ProfilePageProps {
 }
 const ProfilePage = ({ classnames }: ProfilePageProps) => {
     const { t } = useTranslation('profilePage');
+    const { id } = useParams<{id: string}>();
 
     const formData = useSelector(getProfileForm);
     const isLoading = useSelector(getProfileIsLoading);
@@ -44,11 +47,11 @@ const ProfilePage = ({ classnames }: ProfilePageProps) => {
 
     const dispatch = useAppDispatch();
 
-    useEffect(() => {
-        if (__PROJECT__ !== 'storybook') {
-            dispatch(fetchProfileData());
+    useInitialEffects(() => {
+        if (id) {
+            dispatch(fetchProfileData(id));
         }
-    }, [dispatch]);
+    });
 
     const onChangeFirstName = useCallback((value?:string) => {
         dispatch(profileActions.updateProfile({ first: value || '' }));
