@@ -57,6 +57,7 @@ module.exports = {
         'no-param-reassign': 'off',
         'linebreak-style': ['error', process.platform === 'win32' ? 'windows' : 'unix'],
         'no-undef': 'off',
+        'react/no-array-index-key': 'off',
     },
     globals: {
         __IS_DEV__: true,
