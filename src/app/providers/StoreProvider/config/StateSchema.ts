@@ -10,6 +10,7 @@ import { ArticleDetailsSchema } from 'entities/Article';
 import { ArticleDetailsCommentsSchema } from 'pages/ArticleDetailsPage';
 import { AddCommentFormSchema } from 'features/addCommentForm';
 import { ArticlesPageSchema } from 'pages/ArticlesPage/model/types/articlesPageSchema';
+import { ScrollPositionSchema } from 'features/scrollPosition';
 
 export interface StateSchema {
     counter: CounterSchema;
@@ -20,7 +21,8 @@ export interface StateSchema {
     articleDetails?: ArticleDetailsSchema;
     articlesDetailsComments? : ArticleDetailsCommentsSchema;
     addCommentFormSchema?: AddCommentFormSchema;
-    articlesList?: ArticlesPageSchema
+    articlesList?: ArticlesPageSchema;
+    scrollPosition: ScrollPositionSchema;
 
 }
 
