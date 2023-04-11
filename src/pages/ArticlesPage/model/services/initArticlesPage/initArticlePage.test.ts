@@ -16,8 +16,8 @@ describe('initArticlesPage.test', () => {
                 _inited: true,
             },
         });
-
-        await thunk.callThunk();
+        const params = new URLSearchParams();
+        await thunk.callThunk(params);
         expect(thunk.dispatch).toBeCalledTimes(2);
         expect(fetchArticlesList).not.toHaveBeenCalled();
     });

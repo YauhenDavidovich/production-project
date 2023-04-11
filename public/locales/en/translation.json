@@ -24,5 +24,17 @@
   "There are no comments": "There are no comments",
   "Add comment text": "Add comment text",
   "Send": "Send",
-  "Read more": "Read more..."
+  "Read more": "Read more...",
+  "increasing": "increasing",
+  "decreasing": "decreasing",
+  "date": "date",
+  "name": "name",
+  "views": "views",
+  "Sort by": "Sort by",
+  "by": "by",
+  "all": "ALL",
+  "it": "IT",
+  "economics": "ECONOMICS",
+  "science": "SCIENCE",
+  "Articles not found": "Articles not found"
 }

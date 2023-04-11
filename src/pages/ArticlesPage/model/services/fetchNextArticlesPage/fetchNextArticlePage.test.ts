@@ -14,12 +14,12 @@ describe('fetchNextArticlePage.test', () => {
                 limit: 3,
                 isLoading: false,
                 hasMore: true,
+
             },
         });
-
         await thunk.callThunk();
         expect(thunk.dispatch).toBeCalledTimes(4);
-        expect(fetchArticlesList).toBeCalledWith({ page: 3 });
+        expect(fetchArticlesList).toBeCalled();
     });
     test('cant fetch data', async () => {
         const thunk = new TestAsyncThunk(fetchNextArticlesPage, {
@@ -32,7 +32,6 @@ describe('fetchNextArticlePage.test', () => {
                 hasMore: false,
             },
         });
-
         await thunk.callThunk();
         expect(thunk.dispatch).toBeCalledTimes(2);
         expect(fetchArticlesList).not.toHaveBeenCalled();
@@ -48,7 +47,6 @@ describe('fetchNextArticlePage.test', () => {
                 hasMore: true,
             },
         });
-
         await thunk.callThunk();
         expect(thunk.dispatch).toBeCalledTimes(2);
         expect(fetchArticlesList).not.toHaveBeenCalled();

@@ -1,5 +1,5 @@
 .InputWrapper {
-    margin: 8px;
+    margin: 12px;
     position: relative;
     display: inline-flex;
     align-items: center;
@@ -13,6 +13,7 @@
     font: var(--font-m);
     pointer-events: none;
     transition: all 0.3s ease;
+    color: var(--secondary-color);
 }
 
 .Input {
@@ -32,9 +33,9 @@
 
         & ~ .InputLabel {
             font: var(--font-m);
-            transform: translateY(-32px);
-            background-color: var(--bg-color);
-            color: var(--primary-color);
+            transform: translate(-12px, -46px) scale(0.8);
+            padding: 4px;
+            color: var(--secondary-color);
         }
     }
 
@@ -53,7 +54,7 @@
 
 .InputLabelFocused {
     font: var(--font-m);
-    transform: translateY(-32px);
-    background-color: var(--bg-color);
-    color: var(--primary-color);
+    transform: translate(-12px, -46px) scale(0.8);
+    padding: 4px;
+    color: var(--secondary-color);
 }
