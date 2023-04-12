@@ -4,6 +4,7 @@ import cls from './Text.module.scss';
 
 export enum TextTheme {
     PRIMARY = 'primary',
+    INVERTED = 'inverted',
     ERROR = 'error',
 }
 
@@ -12,11 +13,13 @@ export enum TextSize {
     M = 'size_m',
     L = 'size_l',
 }
+
 export enum TextAlign {
     RIGHT = 'right',
     LEFT = 'left',
     CENTER = 'center',
 }
+
 interface TextProps {
     className?: string;
     title?: string;

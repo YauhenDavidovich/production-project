@@ -35,5 +35,9 @@
   "it": "АЙТИ",
   "economics": "ЭКОНОМИКА",
   "science": "НАУКА",
-  "Articles not found": "Статьи не найдены"
+  "Articles not found": "Статьи не найдены",
+  "ARTICLE EDIT PAGE ID =": "Страница редактирования статьи с ID =",
+  "ARTICLE CREATE NEW PAGE": "Страница создания новой статьи",
+  "Production Project": "Production Project",
+  "Create article": "Создать статью"
 }
