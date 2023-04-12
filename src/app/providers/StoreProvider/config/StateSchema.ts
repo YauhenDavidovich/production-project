@@ -7,10 +7,10 @@ import {
 import { ProfileSchema } from 'entities/Profile';
 import { AxiosInstance } from 'axios';
 import { ArticleDetailsSchema } from 'entities/Article';
-import { ArticleDetailsCommentsSchema } from 'pages/ArticleDetailsPage';
 import { AddCommentFormSchema } from 'features/addCommentForm';
 import { ArticlesPageSchema } from 'pages/ArticlesPage/model/types/articlesPageSchema';
 import { ScrollPositionSchema } from 'features/scrollPosition';
+import { ArticleDetailsPageSchema } from 'pages/ArticleDetailsPage/';
 
 export interface StateSchema {
     counter: CounterSchema;
@@ -19,7 +19,7 @@ export interface StateSchema {
     loginForm?: LoginSchema;
     profile?: ProfileSchema;
     articleDetails?: ArticleDetailsSchema;
-    articlesDetailsComments? : ArticleDetailsCommentsSchema;
+    articleDetailsPage?: ArticleDetailsPageSchema;
     addCommentFormSchema?: AddCommentFormSchema;
     articlesList?: ArticlesPageSchema;
     scrollPosition: ScrollPositionSchema;
@@ -48,5 +48,4 @@ export interface ThunkConfig<T> {
     rejectValue: T;
     extra: ThunkExtraArg;
     state: StateSchema;
-
 }
