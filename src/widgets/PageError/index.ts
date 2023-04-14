@@ -1,4 +1,4 @@
-import { PageError } from 'widgets/PageError/ui/PageError';
+import { PageError } from './ui/PageError';
 import { BugButton } from './ui/BugButton';
 
 export {

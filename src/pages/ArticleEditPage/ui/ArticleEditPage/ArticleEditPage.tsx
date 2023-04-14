@@ -1,7 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { Page } from 'widgets/Page/Page';
-import { ArticleEditPageAsync } from 'pages/ArticleEditPage/ui/ArticleEditPage/ArticleEditPage.async';
 import { memo } from 'react';
 import { useParams } from 'react-router-dom';
 import cls from './ArticleEditPage.module.scss';
