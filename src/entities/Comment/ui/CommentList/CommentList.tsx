@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { Text } from 'shared/ui/Text/Text';
-import cls from './CommentList.module.scss';
+import { VStack } from 'shared/ui/Stack';
 import { CommentCard } from '../CommentCard/CommentCard';
 import { Comment } from '../../model/types/comment';
 
@@ -17,21 +17,21 @@ export const CommentList = (props: CommentListProps) => {
 
     if (isLoading) {
         return (
-            <div className={classNames(cls.CommentList, {}, [className])}>
+            <VStack gap="16" max className={classNames('', {}, [className])}>
                 <CommentCard isLoading />
                 <CommentCard isLoading />
                 <CommentCard isLoading />
-            </div>
+            </VStack>
         );
     }
 
     return (
-        <div className={classNames(cls.CommentList, {}, [className])}>
+        <VStack gap="16" max className={classNames('', {}, [className])}>
             {comments?.length
                 ? comments.map((comment) => (
-                    <CommentCard comment={comment} className={cls.comment} key={comment.id} />
+                    <CommentCard comment={comment} key={comment.id} />
                 ))
                 : <Text text={t('There are no comments')} />}
-        </div>
+        </VStack>
     );
 };
