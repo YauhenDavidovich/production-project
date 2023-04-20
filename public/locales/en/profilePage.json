@@ -15,5 +15,6 @@
   "Incorrect age": "Incorrect age",
   "Incorrect country": "Incorrect country",
   "First and last names are required": "First and last names are required",
-  "No data is specified": "No data is specified"
+  "No data is specified": "No data is specified",
+  "Profile not found": "Profile not found"
 }

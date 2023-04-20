@@ -4,13 +4,14 @@ import { LoginSchema } from 'features/AuthByUsername';
 import {
     AnyAction, CombinedState, EnhancedStore, Reducer, ReducersMapObject,
 } from '@reduxjs/toolkit';
-import { ProfileSchema } from 'entities/Profile';
 import { AxiosInstance } from 'axios';
 import { ArticleDetailsSchema } from 'entities/Article';
 import { AddCommentFormSchema } from 'features/addCommentForm';
 import { ArticlesPageSchema } from 'pages/ArticlesPage/model/types/articlesPageSchema';
 import { ScrollPositionSchema } from 'features/scrollPosition';
 import { ArticleDetailsPageSchema } from 'pages/ArticleDetailsPage/';
+import { rtkApi } from 'shared/api/rtkApi';
+import { ProfileSchema } from 'features/editableProfileCard';
 
 export interface StateSchema {
     counter: CounterSchema;
@@ -23,6 +24,7 @@ export interface StateSchema {
     addCommentFormSchema?: AddCommentFormSchema;
     articlesList?: ArticlesPageSchema;
     scrollPosition: ScrollPositionSchema;
+    [rtkApi.reducerPath]: ReturnType<typeof rtkApi.reducer>
 
 }
 
