@@ -4,7 +4,7 @@ import { memo } from 'react';
 import { Text, TextSize } from 'shared/ui/Text/Text';
 import { ArticleList } from 'entities/Article';
 import { VStack } from 'shared/ui/Stack';
-import { useArticleRecommendationsList } from '../../api/articleRecommendationsAoi';
+import { useArticleRecommendationsList } from '../../api/articleRecommendationsApi';
 
 interface ArticleRecommendationsListProps {
     className?: string;
@@ -15,7 +15,7 @@ export const ArticleRecommendationsList = memo((props: ArticleRecommendationsLis
     const { t } = useTranslation();
     const { data: articles, isLoading, error } = useArticleRecommendationsList(3);
 
-    if (isLoading || error) {
+    if (isLoading || error || !articles) {
         return null;
     }
 
