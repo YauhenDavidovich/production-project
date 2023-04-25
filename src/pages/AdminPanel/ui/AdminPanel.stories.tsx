@@ -3,26 +3,26 @@ import { ComponentMeta, ComponentStory } from '@storybook/react';
 
 import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
 import { Theme } from 'app/providers/ThemeProvider';
-import MainPage from './MainPage';
+import AdminPanel from './AdminPanel';
 
 export default {
     title: 'pages/AdminPanel',
-    component: MainPage,
+    component: AdminPanel,
     argTypes: {
         backgroundColor: { control: 'color' },
     },
     decorators: [
         ThemeDecorator(Theme.LIGHT),
     ],
-} as ComponentMeta<typeof MainPage>;
+} as ComponentMeta<typeof AdminPanel>;
 
-const Template: ComponentStory<typeof MainPage> = () => (
-    <MainPage />
+const Template: ComponentStory<typeof AdminPanel> = () => (
+    <AdminPanel />
 );
 
-export const MainPageLight = Template.bind({});
-MainPageLight.args = {};
+export const AdminPanelLight = Template.bind({});
+AdminPanelLight.args = {};
 
-export const MainPageDark = Template.bind({});
-MainPageDark.args = {};
-MainPageDark.decorators = [ThemeDecorator(Theme.DARK)];
+export const AdminPanelDark = Template.bind({});
+AdminPanelDark.args = {};
+AdminPanelDark.decorators = [ThemeDecorator(Theme.DARK)];

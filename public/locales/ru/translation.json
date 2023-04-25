@@ -39,5 +39,7 @@
   "ARTICLE EDIT PAGE ID =": "Страница редактирования статьи с ID =",
   "ARTICLE CREATE NEW PAGE": "Страница создания новой статьи",
   "Production Project": "Production Project",
-  "Create article": "Создать статью"
+  "Create article": "Создать статью",
+  "Admin panel": "Панель администратора",
+  "Page not allowed": "Страница не доступна"
 }
